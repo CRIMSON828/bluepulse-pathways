@@ -13,7 +13,7 @@ export default function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       router.push('/assess');
-    } catch (error) {
+    } catch (error: any) {
       alert(error.message);
     }
   };
